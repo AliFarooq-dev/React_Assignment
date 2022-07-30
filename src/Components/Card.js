@@ -1,7 +1,7 @@
-import { MailOutlined, GlobalOutlined, PhoneOutlined } from '@ant-design/icons';
-import { Avatar, Card } from 'antd';
-import React from 'react';
-const { Meta } = Card;
+import { MailOutlined, GlobalOutlined, PhoneOutlined } from '@ant-design/icons'
+import { Avatar, Card } from 'antd'
+import React from 'react'
+const { Meta } = Card
 
 const App = ({ name, email, website, phone }) => (
     <div className="col-md-3 my-1" style={{ margin: '15px' }}>
