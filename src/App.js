@@ -7,15 +7,34 @@ const App = () => {
         {
             name: 'Ali farooq',
             email: 'Alifarooq@gmail.com',
-            website: 'WWW.Alifarooqweb.co.uk'
+            website: 'WWW.Alifarooqweb.co.uk',
+            phone: '0302-5254712'
+        },
+        {
+            name: 'Prof. Faizan-ur-rehman Farooqi',
+            email: 'Alifarooq@gmail.com',
+            website: 'WWW.Alifarooqweb.co.uk',
+            phone: '0302-5254712'
+        },
+        {
+            name: 'John wick',
+            email: 'Alifarooq@gmail.com',
+            website: 'WWW.Alifarooqweb.co.uk',
+            phone: '0302-5254712'
+        },
+        {
+            name: 'Jason bourne',
+            email: 'Alifarooq@gmail.com',
+            website: 'WWW.Alifarooqweb.co.uk',
+            phone: '0302-5254712'
         }
     ])
 
     return (
         <>
-            <div>
+            <div className="row my-3" style={{ display: 'flex',   flexWrap: "wrap", margin: '10px'}}>
                 {usersProfile.map((profile, index) => {
-                    return <Card name={profile.name} email={profile.email} website={profile.website} key={index}/>
+                    return <Card name={profile.name} email={profile.email} website={profile.website} key={index} phone={profile.phone}/>
                 })}
             </div>
         </>
