@@ -1,3 +1,4 @@
+import Modal from "./Components/Modal";
 import React from "react";
 import { useState, useEffect } from 'react'
 import Card from './Components/Card'
@@ -36,6 +37,7 @@ const App = () => {
                 {usersProfile.map((profile, index) => {
                     return <Card name={profile.name} email={profile.email} website={profile.website} key={index} phone={profile.phone}/>
                 })}
+                <Modal/>
             </div>
         </>
     );

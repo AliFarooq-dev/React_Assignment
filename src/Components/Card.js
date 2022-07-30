@@ -16,7 +16,7 @@ const App = ({ name, email, website, phone }) => (
                 </div>
             </div>
             <div className='ant-card-body'>
-                <h5 style={{ margin: '15px', fontWeight: 'normal' }}>{name}</h5>
+                <h5 style={{ margin: '10px', fontWeight: 'normal' }}>{name}</h5>
                 <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '15px' }}>
                     <div style={{ fontSize: '14px' }}>
                         < MailOutlined />
