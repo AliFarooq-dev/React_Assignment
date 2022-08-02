@@ -1,11 +1,11 @@
 import { MailOutlined, GlobalOutlined, PhoneOutlined } from '@ant-design/icons'
-import { Avatar, Card } from 'antd'
+import { Card } from 'antd'
 import React from 'react'
 const { Meta } = Card
 
 const App = ({ name, email, website, phone }) => (
-    <div className="col-md-3 my-1" style={{ margin: '15px' }}>
-        <div className='ant card ant-card-bordered' style={{width: '300px', height: '400px'}}>
+    <div className="col-md-3 my-3" style={{ margin: 'auto' }}>
+        <div className='ant card ant-card-bordered' style={{ width: '300px', height: '400px', margin: "auto" }}>
             <div className='ant-card-cover' style={{ backgroundColor: '#d2d9d975' }}>
                 <div className='cardHeadImage' style={{ display: 'flex', justifyContent: 'center' }}>
                     <img
@@ -18,22 +18,22 @@ const App = ({ name, email, website, phone }) => (
             <div className='ant-card-body'>
                 <h5 style={{ margin: '10px', fontWeight: 'normal' }}>{name}</h5>
                 <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '15px' }}>
-                    <div style={{ fontSize: '14px' }}>
+                    <div >
                         < MailOutlined />
                     </div>
-                    <p style={{ marginLeft: '15px', fontWeight: 'normal' }}> {email}</p>
+                    <p style={{ marginLeft: '15px', fontWeight: 'lighter', fontSize: '18px' }}> {email}</p>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '15px' }}>
-                    <div style={{ fontSize: '14px' }}>
-                        <PhoneOutlined  />
+                    <div >
+                        <PhoneOutlined />
                     </div>
-                    <p style={{ marginLeft: '15px', fontWeight: 'normal' }}> {phone}</p>
+                    <p style={{ marginLeft: '15px', fontWeight: "lighter", fontSize: '18px' }}> {phone}</p>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '15px' }}>
-                    <div style={{ fontSize: '14px', fontWeight: 'normal' }}>
+                    <div style={{  fontWeight: 'lighter' }}>
                         <GlobalOutlined />
                     </div>
-                    <p style={{ marginLeft: '15px' }}> {website}</p>
+                    <p style={{ marginLeft: '15px', fontWeight: "lighter", fontSize: "17px" }}> {website}</p>
                 </div>
             </div>
         </div>
